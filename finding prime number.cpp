@@ -3,11 +3,14 @@ using namespace std;
 
 int main() {
       
-  int n=7;
+  int n;
+  cout<<"enter a number to check wether it's a prime number or not"<<endl;
+  cin>>n;
+
 
   bool isPrime=true;
   
-  for (int i =2 ;i<=n-1 ;i++){
+  for (int i =2 ;i*i<=n ;i++){
     if (n%i==0){
       isPrime=false;
       break;
